@@ -28,7 +28,6 @@ outputs trip statistics. The statistics include:
 * Most Common Birth Year
 
 ##### The user also has the ability to view the raw data 5 lines at a time if they choose to.
->>>>>>> documentation
 
 ### How To Run The Program
 This program can be run with the input `python bikeshare.py` in your terminal.
