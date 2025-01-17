@@ -8,26 +8,26 @@ This project uses pandas library to determine statistics on us bikeshare data. T
 in user input for which months, days, and city they would like to explore the data for, and then
 outputs trip statistics. The statistics include:
 
-#### Most Popular: 
-* Month
-* Day
-* Start Hour
-* Start Station
-* End Station
-* Combination of start and end stations
+Most Popular: 
+*Month
+*Day
+*Start Hour
+*Start Station
+*End Station
+*Combination of start and end stations
 
-#### Durations: 
-* Total Trip
-* Average Trip
+Durations: 
+*Total Trip
+*Average Trip
 
-#### User Statistics (If present in data file):
-* Count of users by Customer or Subscriber
-* Count of users by Gender
-* Earliest Birth Year
-* Most recent Birth Year
-* Most Common Birth Year
+User Statistics (If present in data file):
+*Count of users by Customer or Subscriber
+*Count of users by Gender
+*Earliest Birth Year
+*Most recent Birth Year
+*Most Common Birth Year
 
-##### The user also has the ability to view the raw data 5 lines at a time if they choose to.
+The user also has the ability to view the raw data 5 lines at a time if they choose to.
 
 ### How To Run The Program
 This program can be run with the input `python bikeshare.py` in your terminal.
