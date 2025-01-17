@@ -221,7 +221,7 @@ def user_stats(df):
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
-def raw_data(df):
+def data_display(df):
     '''
     Displays 5 rows of data from the slected csv file
 
@@ -268,7 +268,7 @@ def main():
     while True:
         city, month, day = get_filters()
         df = load_data(city, month, day)
-        raw_data(df)
+        data_display(df)
         time_stats(df)
         station_stats(df)
         trip_duration_stats(df)
