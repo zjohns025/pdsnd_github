@@ -6,7 +6,7 @@
 ### Project Description
 This project uses pandas library to determine statistics on us bikeshare data. The program takes
 in user input for which months, days, and city they would like to explore the data for, and then
-outputs trip statistics. The statistics include:
+outputs trip statistics. The statistics include the following:
 
 #### Most Popular: 
 * Month
