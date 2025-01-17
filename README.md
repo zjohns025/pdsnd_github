@@ -3,7 +3,6 @@
 
 ### Udacity Project 2: Explore Bikeshare Data
 
-
 ### Project Description
 This project uses pandas library to determine statistics on us bikeshare data. The program takes
 in user input for which months, days, and city they would like to explore the data for, and then
@@ -30,10 +29,9 @@ User Statistics (If present in data file):
 
 The user also has the ability to view the raw data 5 lines at a time if they choose to.
 
+### How To Run The Program
+This program can be run with the input `python bikeshare.py` in your terminal.
 
 ### Files used
-Include the files used
-
-### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+.csv files for the project were provided by Udacity.
 
