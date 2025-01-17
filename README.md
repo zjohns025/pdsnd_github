@@ -14,7 +14,7 @@ outputs trip statistics. The statistics include:
 * Start Hour
 * Start Station
 * End Station
-* Combination of start and end stations
+* Combination of start and end station
 
 #### Durations: 
 * Total Trip
