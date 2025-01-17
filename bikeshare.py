@@ -232,7 +232,7 @@ def data_display(df):
         None
     '''
     
-    start_index = 0
+    i = 0
     chunk_size = 5
     acceptable_responses = ['yes', 'no']
     user_input = ''
@@ -243,17 +243,17 @@ def data_display(df):
             print('\nThat input is invalid, please select yes or no, re-prompting...')
     # Start chunking the data if the user chooses yes        
     if user_input == 'yes':
-        while start_index < len(df):
-            chunk = df.iloc[start_index:start_index + chunk_size]
+        while i < len(df):
+            chunk = df.iloc[i:i + chunk_size]
     
     # Print the current chunk
             print(chunk)
     
     # Update the starting index for the next chunk
-            start_index += chunk_size
+            i += chunk_size
     
     # Ask the user if they want to see the next 5 items if there are more items to show
-            if start_index < len(df):  
+            if i < len(df):  
                 user_input = input('Do you want to see the next 5 items? (yes/no): ').strip().lower() 
                 while user_input not in acceptable_responses: 
                     user_input = ('That input is invalid, please select yes or no: ')
