@@ -221,7 +221,7 @@ def user_stats(df):
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
-def raw_data(df):
+def data_display(df):
     '''
     Displays 5 rows of data from the slected csv file
 
@@ -232,7 +232,7 @@ def raw_data(df):
         None
     '''
     
-    start_index = 0
+    i = 0
     chunk_size = 5
     acceptable_responses = ['yes', 'no']
     user_input = ''
@@ -243,17 +243,17 @@ def raw_data(df):
             print('\nThat input is invalid, please select yes or no, re-prompting...')
     # Start chunking the data if the user chooses yes        
     if user_input == 'yes':
-        while start_index < len(df):
-            chunk = df.iloc[start_index:start_index + chunk_size]
+        while i < len(df):
+            rd_chunk = df.iloc[i:i + chunk_size]
     
     # Print the current chunk
-            print(chunk)
+            print(rd_chunk)
     
     # Update the starting index for the next chunk
-            start_index += chunk_size
+            i += chunk_size
     
     # Ask the user if they want to see the next 5 items if there are more items to show
-            if start_index < len(df):  
+            if i < len(df):  
                 user_input = input('Do you want to see the next 5 items? (yes/no): ').strip().lower() 
                 while user_input not in acceptable_responses: 
                     user_input = ('That input is invalid, please select yes or no: ')
@@ -268,7 +268,7 @@ def main():
     while True:
         city, month, day = get_filters()
         df = load_data(city, month, day)
-        raw_data(df)
+        data_display(df)
         time_stats(df)
         station_stats(df)
         trip_duration_stats(df)
