@@ -244,10 +244,10 @@ def data_display(df):
     # Start chunking the data if the user chooses yes        
     if user_input == 'yes':
         while i < len(df):
-            chunk = df.iloc[i:i + chunk_size]
+            rd_chunk = df.iloc[i:i + chunk_size]
     
     # Print the current chunk
-            print(chunk)
+            print(rd_chunk)
     
     # Update the starting index for the next chunk
             i += chunk_size
